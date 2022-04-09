@@ -1,10 +1,10 @@
 import * as S from "./styled";
 
 export type MainProps = {
-  title: string;
-  description: string;
-  backgroundColor: string;
-  fontColor: string;
+  title?: string;
+  description?: string;
+  backgroundColor?: string;
+  fontColor?: string;
 };
 
 const Main = ({
