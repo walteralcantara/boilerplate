@@ -1,8 +1,17 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
-export const Wrapper = styled.main`
-  background-color: #1f1b2e;
-  color: #fff;
+import { MainProps } from ".";
+
+type WrapperProps = Pick<MainProps, "backgroundColor" | "fontColor">;
+
+export const Wrapper = styled.main<WrapperProps>`
+  ${(props) =>
+    props &&
+    css`
+      background-color: ${props.backgroundColor};
+      color: ${props.fontColor};
+    `}
+
   width: 100%;
   height: 100%;
   padding: 3rem;

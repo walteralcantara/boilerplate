@@ -1,12 +1,22 @@
 import * as S from "./styled";
 
-const Main = () => (
-  <S.Wrapper>
+export type MainProps = {
+  title: string;
+  description: string;
+  backgroundColor: string;
+  fontColor: string;
+};
+
+const Main = ({
+  title = "Walter's Boilerplate",
+  description = "TypeScript, React, Next.js and Styled Components",
+  backgroundColor = "#1f1b2e",
+  fontColor = "#ffffff"
+}: MainProps) => (
+  <S.Wrapper backgroundColor={backgroundColor} fontColor={fontColor}>
     <S.Logo src="/img/logo.png" />
-    <S.Title>Walter&apos;s Boilerplate</S.Title>
-    <S.Description>
-      TypeScript, React, Next.js and Styled Components
-    </S.Description>
+    <S.Title>{title}</S.Title>
+    <S.Description>{description}</S.Description>
   </S.Wrapper>
 );
 
