@@ -1,7 +1,13 @@
+import * as S from "./styled";
+
 const Main = () => (
-  <main>
-    <h1>Walter</h1>
-  </main>
+  <S.Wrapper>
+    <S.Logo src="/img/logo.png" />
+    <S.Title>Walter&apos;s Boilerplate</S.Title>
+    <S.Description>
+      TypeScript, React, Next.js and Styled Components
+    </S.Description>
+  </S.Wrapper>
 );
 
 export default Main;

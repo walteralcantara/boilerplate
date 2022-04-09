@@ -1,9 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Main /> should render the heading 1`] = `
-<main>
-  <h1>
-    Walter
+<main
+  class="styled__Wrapper-sc-1liutmq-0 iHBElp"
+>
+  <img
+    class="styled__Logo-sc-1liutmq-1 hqwcxs"
+    src="/img/logo.png"
+  />
+  <h1
+    class="styled__Title-sc-1liutmq-2 bdzRJU"
+  >
+    Walter's Boilerplate
   </h1>
+  <h2
+    class="styled__Description-sc-1liutmq-3 jbHQxb"
+  >
+    TypeScript, React, Next.js and Styled Components
+  </h2>
 </main>
 `;

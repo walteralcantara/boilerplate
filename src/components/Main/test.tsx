@@ -7,9 +7,15 @@ describe("<Main />", () => {
     const { container } = render(<Main />);
 
     expect(
-      screen.getByRole("heading", { name: /walter/i })
+      screen.getByRole("heading", { name: /walter's boilerplate/i })
     ).toBeInTheDocument();
 
     expect(container.firstChild).toMatchSnapshot();
+  });
+
+  it("should render the colors correctly", () => {
+    const { container } = render(<Main />);
+
+    expect(container.firstChild).toHaveStyle({ "background-color": "#1f1b2e" });
   });
 });
