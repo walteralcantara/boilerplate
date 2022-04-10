@@ -12,6 +12,7 @@ This project uses lot of stuff as:
 - [Storybook](https://storybook.js.org/)
 - [Eslint](https://eslint.org/)
 - [Prettier](https://prettier.io/)
+- [Plop](https://plopjs.com/)
 
 ## Getting Started
 
